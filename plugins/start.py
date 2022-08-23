@@ -32,7 +32,7 @@ from helper.database import insert
 from helper.utils import not_subscribed 
 
 FLOOD = int(environ.get("FLOOD", "10"))
-START_PIC = environ.get("START_PIC", "https://telegra.ph/file/04d08445dce68c9a57b25.jpg")
+START_PIC = environ.get("START_PIC", "https://graph.org/file/51dbdf46bdfe49baa25da.jpg")
 
 @Client.on_message(filters.private & filters.create(not_subscribed))
 async def is_not_subscribed(client, message):
