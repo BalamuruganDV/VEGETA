@@ -47,11 +47,11 @@ async def start(client, message):
        photo=START_PIC,
        caption=f"""Hi {message.from_user.mention} \n𝙸'𝚖 𝙰 𝚂𝚒𝚖𝚙𝚕𝚎 𝙵𝚒𝚕𝚎 𝚁𝚎𝚗𝚊𝚖𝚎+𝙵𝚒𝚕𝚎 𝚃𝚘 𝚅𝚒𝚍𝚎𝚘 𝙲𝚘𝚟𝚎𝚛𝚝𝚎𝚛 𝙱𝙾𝚃 𝚆𝚒𝚝𝚑 𝙿𝚎𝚛𝚖𝚊𝚗𝚎𝚗𝚝 𝚃𝚑𝚞𝚖𝚋𝚗𝚊𝚒𝚕 & 𝙲𝚞𝚜𝚝𝚘𝚖 𝙲𝚊𝚙𝚝𝚒𝚘𝚗 𝚂𝚞𝚙𝚙𝚘𝚛𝚝! """,
        reply_markup=InlineKeyboardMarkup( [[
-           InlineKeyboardButton("𝙳𝙴𝚅𝚂", callback_data='dev')
-           InlineKeyboardButton('𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/Inline_db'),
+           InlineKeyboardButton("𝙳𝙴𝚅𝚂", callback_data='dev'),
+           InlineKeyboardButton('𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/Inline_db')
            ],[
-           InlineKeyboardButton('𝙰𝙱𝙾𝚄𝚃', callback_data='about')
-           InlineKeyboardButton('𝙷𝙴𝙻𝙿', callback_data='help'),
+           InlineKeyboardButton('𝙰𝙱𝙾𝚄𝚃', callback_data='about'),
+           InlineKeyboardButton('𝙷𝙴𝙻𝙿', callback_data='help')
            ]]
           )
        )
@@ -86,11 +86,11 @@ async def cb_handler(client, query: CallbackQuery):
         await query.message.edit_text(
             text=f"""Hi {query.from_user.mention} \n𝙸'𝚖 𝙰 𝚂𝚒𝚖𝚙𝚕𝚎 𝙵𝚒𝚕𝚎 𝚁𝚎𝚗𝚊𝚖𝚎+𝙵𝚒𝚕𝚎 𝚃𝚘 𝚅𝚒𝚍𝚎𝚘 𝙲𝚘𝚟𝚎𝚛𝚝𝚎𝚛 𝙱𝙾𝚃 𝚆𝚒𝚝𝚑 𝙿𝚎𝚛𝚖𝚊𝚗𝚎𝚗𝚝 𝚃𝚑𝚞𝚖𝚋𝚗𝚊𝚒𝚕 & 𝙲𝚞𝚜𝚝𝚘𝚖 𝙲𝚊𝚙𝚝𝚒𝚘𝚗 𝚂𝚞𝚙𝚙𝚘𝚛𝚝! """,
             reply_markup=InlineKeyboardMarkup( [[
-                InlineKeyboardButton("𝙳𝙴𝚅𝚂", callback_data='dev')                
-                InlineKeyboardButton('𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/Inline_db'),
+                InlineKeyboardButton("𝙳𝙴𝚅𝚂", callback_data='dev'),                
+                InlineKeyboardButton('𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/Inline_db')
                 ],[
-                InlineKeyboardButton('𝙰𝙱𝙾𝚄𝚃', callback_data='about')
-                InlineKeyboardButton('𝙷𝙴𝙻𝙿', callback_data='help'),
+                InlineKeyboardButton('𝙰𝙱𝙾𝚄𝚃', callback_data='about'),
+                InlineKeyboardButton('𝙷𝙴𝙻𝙿', callback_data='help')
                 ]]
                 )
             )
